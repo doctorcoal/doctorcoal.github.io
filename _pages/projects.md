@@ -4,8 +4,6 @@ title: "Projects"
 author_profile: true
 ---
 
-[中文版](/zh/projects/)
-
 ## Automated Lightweight Design for Vision Algorithms (Industry Collaboration)
 **2026.03 – 2026.09 · with Shanghai Institute of Mechanical and Electrical Engineering (SAST, 航天八院) · Core member**
 

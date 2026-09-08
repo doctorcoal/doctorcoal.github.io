@@ -27,7 +27,9 @@ My work has been published at **ACL, AAAI, DAC, DATE, and IEEE TCAD**, including
 - **LEAP** (IEEE TCAD 2025, first author): proactive early-exit prediction; **83%** energy reduction and **71%** latency reduction with < 1% accuracy loss
 - **EENet** (DAC 2023 **Oral**, co-first author): co-design of dynamic early exit and DVFS; **64%** energy saving on ResNet
 
-Full list at [Publications](/publications/); research and engineering experience at [Projects](/projects/). 中文版入口：[中文主页](/zh/)。
+Full list at [Publications](/publications/); research and engineering experience at [Projects](/projects/).
+
+<strong style="color:#c0392b;">📢 I am on the job market — seeking 2027 full-time positions (efficient on-device AI / model compression / inference systems / LLM acceleration), preferably based in Shanghai or Hangzhou. Feel free to reach out!</strong>
 
 ## Contact
 

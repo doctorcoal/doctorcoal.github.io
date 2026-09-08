@@ -1,6 +1,8 @@
 {% comment %}
-  Custom head include: floating language toggle (中文 / English).
-  English pages live at the root; Chinese pages mirror them under /zh/.
+  Custom head include: bilingual language switcher.
+  - English pages at root, Chinese mirror under /zh/
+  - Floating toggle (bottom-right) + masthead "中文" item both switch language
+  - Choice is remembered in localStorage; returning visitors are auto-redirected
 {% endcomment %}
 <style>
   .lang-toggle {
@@ -20,21 +22,45 @@
   .lang-toggle:hover { opacity: .85; }
 </style>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var p = window.location.pathname;
-    var isZh = (p === '/zh/' || p.indexOf('/zh/') === 0);
-    var target, label;
-    if (isZh) {
-      target = p.replace(/^\/zh/, '') || '/';
-      label = 'English';
-    } else {
-      target = (p === '/' ? '/zh/' : '/zh' + p);
-      label = '中文';
+  (function () {
+    var KEY = 'site-lang';
+    function isZhPath(p) { return p === '/zh/' || p.indexOf('/zh/') === 0; }
+    function otherLangPath(p) {
+      return isZhPath(p) ? (p.replace(/^\/zh/, '') || '/') : (p === '/' ? '/zh/' : '/zh' + p);
     }
-    var a = document.createElement('a');
-    a.href = target;
-    a.className = 'lang-toggle';
-    a.textContent = label;
-    document.body.appendChild(a);
-  });
+    function getPref() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+    function setPref(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var p = window.location.pathname;
+      var isZh = isZhPath(p);
+      var pref = getPref();
+
+      // 记住语言选择：与当前页面语言不一致时自动跳转
+      if ((pref === 'zh' && !isZh) || (pref === 'en' && isZh)) {
+        window.location.replace(otherLangPath(p));
+        return;
+      }
+
+      // 右下角浮动切换按钮
+      var a = document.createElement('a');
+      a.href = otherLangPath(p);
+      a.className = 'lang-toggle';
+      a.textContent = isZh ? 'English' : '中文';
+      a.addEventListener('click', function () { setPref(isZh ? 'en' : 'zh'); });
+      document.body.appendChild(a);
+
+      // 顶部导航栏的「中文」入口：随当前语言变成「中文 / English」切换
+      var navLinks = document.querySelectorAll('.masthead a[href="/zh/"]');
+      navLinks.forEach(function (el) {
+        if (isZh) {
+          el.textContent = 'English';
+          el.href = otherLangPath(p);
+          el.addEventListener('click', function () { setPref('en'); });
+        } else {
+          el.addEventListener('click', function () { setPref('zh'); });
+        }
+      });
+    });
+  })();
 </script>

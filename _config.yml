@@ -34,18 +34,12 @@ author:
   employer: "UM-SJTU Joint Institute, SJTU"
   email: "doctorcoal@sjtu.edu.cn"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:doctorcoal@sjtu.edu.cn"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/doctorcoal"
     - label: "CV (PDF)"
       icon: "fas fa-fw fa-file-pdf"
       url: "/assets/files/CV_YingtaoShen.pdf"
-    - label: "中文版"
-      icon: "fas fa-fw fa-language"
-      url: "/zh/"
 
 # ---------- Footer ----------
 footer:

@@ -4,8 +4,6 @@ title: "Curriculum Vitae"
 author_profile: true
 ---
 
-[中文版](/zh/cv/)
-
 ## Full CV (PDF)
 
 👉 [Download / view: CV_YingtaoShen.pdf](/assets/files/CV_YingtaoShen.pdf)

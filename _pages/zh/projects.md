@@ -4,8 +4,6 @@ title: "项目经历"
 author_profile: true
 ---
 
-[English version](/projects/)
-
 ## 智能算法轻量化设计技术研究（研究所横向）
 **2026.03 – 2026.09 · 合作单位：上海机电工程研究所（航天八院） · 项目核心成员**
 

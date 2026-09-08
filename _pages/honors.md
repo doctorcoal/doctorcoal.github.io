@@ -4,8 +4,6 @@ title: "Honors, Patents & Skills"
 author_profile: true
 ---
 
-[中文版](/zh/honors/)
-
 ## Honors & Awards
 
 - **DAC Young Fellow Award**, 2023.04

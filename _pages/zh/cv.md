@@ -4,8 +4,6 @@ title: "简历下载"
 author_profile: true
 ---
 
-[English version](/cv/)
-
 ## 完整简历（PDF）
 
 👉 [点击下载 / 在线查看：CV_YingtaoShen.pdf](/assets/files/CV_YingtaoShen.pdf)
