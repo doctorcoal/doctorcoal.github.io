@@ -1,0 +1,40 @@
+{% comment %}
+  Custom head include: floating language toggle (中文 / English).
+  English pages live at the root; Chinese pages mirror them under /zh/.
+{% endcomment %}
+<style>
+  .lang-toggle {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 999;
+    background: #494e52;
+    color: #fff !important;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    text-decoration: none !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+  }
+  .lang-toggle:hover { opacity: .85; }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var p = window.location.pathname;
+    var isZh = (p === '/zh/' || p.indexOf('/zh/') === 0);
+    var target, label;
+    if (isZh) {
+      target = p.replace(/^\/zh/, '') || '/';
+      label = 'English';
+    } else {
+      target = (p === '/' ? '/zh/' : '/zh' + p);
+      label = '中文';
+    }
+    var a = document.createElement('a');
+    a.href = target;
+    a.className = 'lang-toggle';
+    a.textContent = label;
+    document.body.appendChild(a);
+  });
+</script>

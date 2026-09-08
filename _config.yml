@@ -1,0 +1,90 @@
+# ============================================================
+#  Yingtao Shen · Personal Homepage
+#  Minimal Mistakes (remote theme) + GitHub Pages
+#  Default language: English (root) · Chinese mirror at /zh/
+# ============================================================
+
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "air"        # options: default / air / aqua / dark / neon / mint / sunrise ...
+
+locale: "en-US"
+title: "Yingtao Shen | 沈颖涛"
+title_separator: "-"
+subtitle: "Efficient On-Device AI · Shanghai Jiao Tong University"
+name: "Yingtao Shen"
+description: >-
+  Personal homepage of Yingtao Shen, Ph.D. candidate in Electronic Science
+  and Technology at Shanghai Jiao Tong University, working on efficient
+  on-device AI: model compression, dynamic inference, and LLM acceleration.
+url: "https://yingtaoshen.github.io"
+baseurl: ""
+repository: "yingtaoshen/yingtaoshen.github.io"
+
+# Site search (Lunr, no external service needed)
+search: true
+search_full_content: false
+search_provider: "lunr"
+
+# ---------- Sidebar author profile ----------
+author:
+  name: "Yingtao Shen 沈颖涛"
+  avatar: "/assets/images/profile.jpg"   # put your photo at assets/images/profile.jpg
+  bio: "Ph.D. Candidate, Electronic Science & Technology<br>Shanghai Jiao Tong University<br>Efficient On-Device AI / 端侧 AI 轻量化"
+  location: "Shanghai / Hangzhou, China"
+  employer: "UM-SJTU Joint Institute, SJTU"
+  email: "doctorcoal@sjtu.edu.cn"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:doctorcoal@sjtu.edu.cn"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yingtaoshen"
+    - label: "CV (PDF)"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/assets/files/CV_YingtaoShen.pdf"
+    - label: "中文版"
+      icon: "fas fa-fw fa-language"
+      url: "/zh/"
+
+# ---------- Footer ----------
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yingtaoshen"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:doctorcoal@sjtu.edu.cn"
+
+# ---------- Build settings ----------
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# All pages show the author sidebar by default
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      show_date: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - 部署指南.md
