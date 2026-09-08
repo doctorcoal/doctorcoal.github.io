@@ -71,6 +71,12 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# 必须显式声明 pages 集合，否则 _pages/ 下的页面不会被构建（会 404）
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
 # All pages show the author sidebar by default
 defaults:
   - scope:
