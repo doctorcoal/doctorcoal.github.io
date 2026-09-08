@@ -16,9 +16,9 @@ description: >-
   Personal homepage of Yingtao Shen, Ph.D. candidate in Electronic Science
   and Technology at Shanghai Jiao Tong University, working on efficient
   on-device AI: model compression, dynamic inference, and LLM acceleration.
-url: "https://yingtaoshen.github.io"
+url: "https://doctorcoal.github.io"
 baseurl: ""
-repository: "yingtaoshen/yingtaoshen.github.io"
+repository: "doctorcoal/doctorcoal.github.io"
 
 # Site search (Lunr, no external service needed)
 search: true
@@ -39,7 +39,7 @@ author:
       url: "mailto:doctorcoal@sjtu.edu.cn"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/yingtaoshen"
+      url: "https://github.com/doctorcoal"
     - label: "CV (PDF)"
       icon: "fas fa-fw fa-file-pdf"
       url: "/assets/files/CV_YingtaoShen.pdf"
@@ -52,7 +52,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/yingtaoshen"
+      url: "https://github.com/doctorcoal"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:doctorcoal@sjtu.edu.cn"

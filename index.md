@@ -33,5 +33,5 @@ Full list at [Publications](/publications/); research and engineering experience
 
 - 📧 Email: [doctorcoal@sjtu.edu.cn](mailto:doctorcoal@sjtu.edu.cn)
 - 📄 CV: [PDF download](/assets/files/CV_YingtaoShen.pdf)
-- 💻 GitHub: [yingtaoshen](https://github.com/yingtaoshen)
+- 💻 GitHub: [doctorcoal](https://github.com/doctorcoal)
 - 📍 Preferred location: Shanghai / Hangzhou

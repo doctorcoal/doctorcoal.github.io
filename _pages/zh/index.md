@@ -35,5 +35,5 @@ author_profile: true
 
 - 📧 邮箱：[doctorcoal@sjtu.edu.cn](mailto:doctorcoal@sjtu.edu.cn)
 - 📄 简历：[PDF 下载](/assets/files/CV_YingtaoShen.pdf)
-- 💻 GitHub：[yingtaoshen](https://github.com/yingtaoshen)
+- 💻 GitHub：[doctorcoal](https://github.com/doctorcoal)
 - 📍 Base 意向：上海 / 杭州
