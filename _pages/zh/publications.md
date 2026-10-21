@@ -22,15 +22,15 @@ author_profile: true
 
 **Yingtao Shen**, Xiangjie Li, Yehan Ma, Jie Zhao, An Zou.
 
-提出主动式早期退出预测机制，以低开销预测引擎在推理早期预判最优计算深度。对 CNN 与 ViT，在 Jetson AGX Orin 与 i7-10700 上能耗降低 **83%**、时延降低 **71%**，精度损失 1% 以内。
+提出主动式早期退出预测机制，以低开销预测引擎在推理早期预判最优计算深度。对多种经典 CNN 与 ViT，在 i7-10700 和 Jetson TX2 上能耗降低 **83%**、时延降低 **71%**，精度损失 1% 以内。
 
 **[DAC 2023] EENet: Energy Efficient Neural Networks with Run-time Power Management**（CCF-A 会议，**Oral**，共同第一作者）
 
 Xiangjie Li\*, **Yingtao Shen\***, An Zou, Yehan Ma.
 
-将动态提前退出与处理器运行时功耗管理（DVFS）协同设计，实现神经网络推理能耗-性能联合优化。在降低 ResNet **64%** 能耗的同时，实时性超越领域 SOTA 方法。
+将动态提前退出与处理器运行时功耗管理（DVFS）协同设计，实现神经网络推理能耗-性能联合优化。在 Jetson TX2 上降低 ResNet34 **64%** 能耗的同时，实时性超越领域 SOTA 方法。
 
-**[CSTIC 2023] Learning-Based Performance and Power Model for Processor Microsecond DVFS**（会议，**Oral**，第一作者）
+**[CSTIC 2023] Learning-Based Performance and Power Model for Processor Microsecond DVFS**（中国半导体大会，**Oral**，第一作者）
 
 **Yingtao Shen**, An Zou.
 

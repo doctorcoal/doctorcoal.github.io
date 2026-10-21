@@ -22,13 +22,13 @@ Models the selection, ordering, and degree of quantization, pruning, distillatio
 
 **Yingtao Shen**, Xiangjie Li, Yehan Ma, Jie Zhao, An Zou.
 
-A proactive early-exit prediction mechanism whose low-cost prediction engine determines the optimal computation depth early in inference. For CNNs and ViTs on Jetson AGX Orin and i7-10700: **83%** energy reduction, **71%** latency reduction, accuracy loss within 1%.
+A proactive early-exit prediction mechanism whose low-cost prediction engine determines the optimal computation depth early in inference. For various classic CNNs and ViTs on i7-10700 and Jetson TX2: **83%** energy reduction, **71%** latency reduction, accuracy loss within 1%.
 
 **[DAC 2023] EENet: Energy Efficient Neural Networks with Run-time Power Management** (CCF-A, **Oral**, co-first author)
 
 Xiangjie Li\*, **Yingtao Shen\***, An Zou, Yehan Ma.
 
-Co-design of dynamic early exiting and processor run-time power management (DVFS) for joint energy-performance optimization of NN inference. **64%** energy reduction on ResNet while beating SOTA on real-time performance.
+Co-design of dynamic early exiting and processor run-time power management (DVFS) for joint energy-performance optimization of NN inference. **64%** energy reduction on ResNet34 on Jetson TX2 while beating SOTA on real-time performance.
 
 **[CSTIC 2023] Learning-Based Performance and Power Model for Processor Microsecond DVFS** (**Oral**, first author)
 
