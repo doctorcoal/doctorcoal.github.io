@@ -13,15 +13,6 @@ RL algorithm, environment, and search strategy design for combinational compress
 - **Innovation**: unified modeling of method selection, ordering, and degree as a Markov decision process; built the compression environment with redesigned state / action / reward representations, plus invalid-action masking and path caching for efficient policy search
 - **Results**: ~**30–100×** theoretical BitOps speedup on ResNet / MobileNet / DeiT over CIFAR-100 and ImageNet; **2–5×** real inference speedup and **3–6×** memory reduction on Jetson AGX Orin; published at **DATE 2026 (Oral)**
 
-## AI Lightweighting Compression System (Internship)
-**2026.03 – 2026.09 · Shanghai Aerospace · AI Engineer (control, image & information processing)**
-
-Research-to-production deployment｜modular packaging and containerized execution｜50–90% memory saving across various CNN and VLM architectures
-
-- **Goal**: automated lightweight design for vision and other intelligent algorithms with embedded real-time inference requirements on mission-critical equipment
-- **Role**: modularized the research combinational-compression framework into a reusable toolchain with clean interfaces; led integration, deployment, and on-device verification against engineering algorithms
-- **Outcome**: an automated compression toolchain supporting ONNX / PyTorch / TensorFlow2 models and covering CNN, YOLO, ViT, VLM architectures; under a ≤ 2% accuracy-loss constraint, reducing **50–95%** compute and **50–90%** memory footprint across target algorithms
-
 ## Fine-Grained Early-Exit Prediction for Computation- and Energy-Efficient Inference (Academic)
 **2022.09 – 2024.06 · ECHSL, Shanghai Jiao Tong University · Core R&D**
 
